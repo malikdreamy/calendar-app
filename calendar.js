@@ -24,14 +24,11 @@ const currentState = () =>{
     <div id="calendar1">
     <h2>Calendar</h2>
     <h4>Select The Date Below To Add Schedule</h4>
-    
 </div>`;
 const range = document.createRange();
 let fragment = range.createContextualFragment(newCalendar);
 document.getElementById("replacement").append(fragment);
 document.getElementById("replacement");
-
-  
     $("#calendar1").multiDatesPicker({            // add date picker to #calendar1
         numberOfMonths: 1,
         changeYear: true,
@@ -65,7 +62,6 @@ const saveSchedule = () => {
     clone.classList.add("createdBlock");
     clone.style.display = "flex";
     clone.firstElementChild.classList.add("createdInput");
-
     clone.dataset.instance = selectedDay;
     let saveImg = clone.querySelector('.saveBtn');
     saveImg.remove();
@@ -88,17 +84,13 @@ const saveSchedule = () => {
     addBtn.style.height = "65px";
     addBtn.setAttribute('id', "addBtn")
     clone.appendChild(addBtn);
-    
-       
-var num_tabs = $('div#tabs ul li.tab').length + 1;        
+ var num_tabs = $('div#tabs ul li.tab').length + 1;        
 $('div#tabs ul').append(
 '<li class="tab"><a href="#tab-' + num_tabs + '"> ' + selectedMonth + " " + selectedDay + " " + selectedYear + '</a></li>' );
-        
 $('div#tabs').append(
 '<div id="tab-' + num_tabs + '"></div>');
 $('#tabs').tabs("refresh");
-$('#tabs').tabs("option", "active", -1); //makes the new tab active
-            
+$('#tabs').tabs("option", "active", -1); //makes the new tab active     
 function insertContent(content) {
     var activeTab = $("#tabs").tabs('option', 'active');   
     activeTab += 1;   
@@ -111,17 +103,11 @@ changeColor();
 //let string = document.getElementById("tabs").innerHTML;
     let string = document.getElementsByTagName("html")[0].outerHTML;
 localStorage.setItem("currentState", string);
-
-}
-    
+}   
 saveBtn.addEventListener("click", saveSchedule);
-
-
-
 }};
     
 window.addEventListener("load", currentState);
-
 $("#calendar1").multiDatesPicker({            // add date picker to #calendar1
     numberOfMonths: 1,
     changeYear: true,
@@ -136,8 +122,6 @@ $( function() {
     $("#tabs").tabs({
          });
   });
-
-
 document.querySelector("#hour-9").style.display = "none";
 document.querySelector("#hour-10").style.display = "none"; // make extra schedule tabs display none
 document.querySelector("#calendar1 > div").style.backgroundColor = "rgba(14, 3, 3, 0.712)"; // edit color of calendar
@@ -273,8 +257,6 @@ const saveSchedule = () => {
     addBtn.style.height = "65px";
     addBtn.setAttribute('id', "addBtn")
     clone.appendChild(addBtn);
-    
-       
 var num_tabs = $('div#tabs ul li.tab').length + 1;        
 $('div#tabs ul').append(
 '<li class="tab"><a href="#tab-' + num_tabs + '"> ' + selectedMonth + " " + selectedDay + " " + selectedYear + '</a></li>' );
