@@ -1,6 +1,5 @@
 # calendar-app
-This is a Calendar/Schedle App. This app allows you to see the current date on the calendar and add events to your schedule tab. When you first go 
-to the app you click on the date you want to schedule time in. You click the date and it becomes highlighted. After you click the date you go down to 
+This is a Calendar/Schedle App. This app allows you to see the current date on the calendar and add events to your schedule tab. The current date will be highlighted yellow in the calendar. When you first go to the app you click on the date you want to schedule time in. You click the date and it becomes highlighted. After you click the date you go down to 
 the green text area and add the time and event description. You add the time in the white textarea and the description in the green textarea. After you
 finish you click the save button and it will save in your schedule tab. You can also remove it from the schedule if you press the red button that says
 "Remove From Schedule". You can also add another event to that date by clicking the green button that says "Create New Event". When you press that button 
