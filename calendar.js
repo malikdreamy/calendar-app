@@ -24,7 +24,7 @@ const currentState = () =>{
     <div id="calendar1">
     <h2>Calendar</h2>
     <h4>Select The Date Below To Add Schedule</h4>
-    <input id="dateinput" placeholder="click to select date" type="text"> 
+    
 </div>`;
 const range = document.createRange();
 let fragment = range.createContextualFragment(newCalendar);
@@ -137,7 +137,7 @@ $( function() {
          });
   });
 
-document.getElementById("dateinput").style.display = "none";
+
 document.querySelector("#hour-9").style.display = "none";
 document.querySelector("#hour-10").style.display = "none"; // make extra schedule tabs display none
 document.querySelector("#calendar1 > div").style.backgroundColor = "rgba(14, 3, 3, 0.712)"; // edit color of calendar
